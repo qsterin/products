@@ -1,6 +1,10 @@
 public class Smartphones extends Product {
     protected String manufacturer;
 
+    public Smartphones() {
+
+    }
+
     public String getManufacturer() {
         return manufacturer;
     }

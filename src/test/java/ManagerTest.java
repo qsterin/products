@@ -88,4 +88,37 @@ class ManagerTest {
         Assertions.assertArrayEquals(expected, manager.findAll());
     }
 
+    //Для 100% покрытия тестирую set и get
+    @Test
+    public void testSetId() {
+        Product product = new Product();
+        product.setId(1);
+        assertEquals(product.getId(), 1);
+    }
+    @Test
+    public void testSetName() {
+        Product product = new Product();
+        product.setName("Name");
+        assertEquals(product.getName(), "Name");
+    }
+    @Test
+    public void testSetPrice() {
+        Product product = new Product();
+        product.setPrice(1000);
+        assertEquals(product.getPrice(), 1000);
+    }
+
+    @Test
+    public void testSetAuthor() {
+        Book book = new Book();
+        book.setAuthor("Dan Brown");
+        assertEquals(book.getAuthor(), "Dan Brown");
+    }
+
+    @Test
+    public void testSetManufacturer() {
+        Smartphones smartphones = new Smartphones();
+        smartphones.setManufacturer("Apple");
+        assertEquals(smartphones.getManufacturer(), "Apple");
+    }
 }

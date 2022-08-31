@@ -1,6 +1,10 @@
 public class Book extends Product{
     protected String author;
 
+    public Book() {
+
+    }
+
     public String getAuthor() {
         return author;
     }
